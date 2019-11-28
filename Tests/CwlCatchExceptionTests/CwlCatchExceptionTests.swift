@@ -20,9 +20,6 @@
 
 import XCTest
 import CwlCatchException
-#if SWIFT_PACKAGE
-import CwlCatchExceptionSupport
-#endif
 
 class TestException: NSException {
 	static var name: String = "com.cocoawithlove.TestException"

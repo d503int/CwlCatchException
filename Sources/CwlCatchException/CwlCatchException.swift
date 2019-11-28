@@ -20,10 +20,6 @@
 
 import Foundation
 
-#if SWIFT_PACKAGE
-import CwlCatchExceptionSupport
-#endif
-
 private func catchReturnTypeConverter<T: NSException>(_ type: T.Type, block: @escaping () -> Void) -> T? {
 	return catchExceptionOfKind(type, block) as? T
 }
